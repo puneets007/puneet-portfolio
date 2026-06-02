@@ -1,0 +1,62 @@
+.Contact{
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.412);
+}
+.sub-btn{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 35px;
+  background-color: #7d2ae8;
+  border-radius: 10px;
+  border: 2px solid #7d2ae8;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sub-btn:hover{
+  color: #7d2ae8;
+  background-color: transparent;
+}
+.name-heading{
+  font-weight: bold;
+  color:rgba(14, 14, 14, 0.718);
+  display:block;
+  margin-bottom: 10px;
+}
+.name{
+  border:solid;
+  border-radius: 5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-bottom: 10px;
+  width:100%
+}
+.email{
+  border:solid;
+  border-radius: 5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-bottom: 10px;
+  width:100%;
+}
+.message{
+  border:solid;
+  border-radius: 5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-bottom: 10px;
+  /* width:100%; */
+  width:470px;
+  height:150px;
+}
+@media (max-width: 768px) {
+  .Contact {
+    padding: 20px;
+  }
+
+  .message {
+    max-width: 100%;
+  }
+}
