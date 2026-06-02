@@ -1,6 +1,10 @@
 import "./Home.css";
 import Contact from "../common/Contact";
 import puneetPhoto from '../../assets/Puneet.jpg';
+import certificatePhoto from '../../assets/401367-0-16504900-1746162168-certificate_gold_seal_certification_by_dny59_gettyimages-942721178_2400x1600-100788472-orig.webp';
+import graduationPhoto from '../../assets/graduation-cap-on-top-of-books.jpg';
+import mernPhoto from '../../assets/MERN_Stack_9437df2ba9_62af1dd3fc.png';
+import puneetResume from '../../assets/Puneet_Singhal_Resume.pdf';
 export default function Home() {
   const scrollToContact = () => {
     document
@@ -37,7 +41,7 @@ export default function Home() {
   <button onClick={scrollToContact}>Let's Connect</button>
 </a>
             <button onClick={scrollToProject}>Projects</button>
-            <a href="/public/Puneet_Singhal_Resume.pdf">Resume</a>
+            <a href={puneetResume}>Resume</a>
           </div>
         </div>
 
@@ -74,7 +78,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mernImage">
-          <img src="/public/MERN_Stack_9437df2ba9_62af1dd3fc.png" />
+          <img src={mernPhoto} />
         </div>
       </section>
 
@@ -95,7 +99,7 @@ export default function Home() {
           </div>
         </div>
         <div className="graduation-image">
-          <img src="/public/graduation-cap-on-top-of-books.jpg" alt="photo" />
+          <img src={graduationPhoto} />
         </div>
       </section>
       <section className="certification" id="Certify">
@@ -117,9 +121,7 @@ export default function Home() {
         </div>
         <div className="certificate-image">
           <img
-            src="/public/401367-0-16504900-1746162168-certificate_gold_seal_certification_by_dny59_gettyimages-942721178_2400x1600-100788472-orig.webp"
-            alt="photo"
-          />
+            src={certificatePhoto} />
         </div>
       </section>
       <section className="project" id="Projects">
