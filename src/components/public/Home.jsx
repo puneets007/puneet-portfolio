@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="profile-image">
-          <img src={puneetPhoto} alt="profile-photo" />
+          <img src={puneetPhoto} />
         </div>
       </section>
       <section className="about" id="About">
