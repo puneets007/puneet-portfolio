@@ -1,5 +1,6 @@
 import "./Home.css";
 import Contact from "../common/Contact";
+import puneetPhoto from '../../assets/Puneet.jpg';
 export default function Home() {
   const scrollToContact = () => {
     document
@@ -41,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="profile-image">
-          <img src="/public/Puneet.jpg" alt="profile-photo" />
+          <img src={puneetPhoto} alt="profile-photo" />
         </div>
       </section>
       <section className="about" id="About">
