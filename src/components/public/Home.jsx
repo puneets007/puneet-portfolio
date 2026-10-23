@@ -1,20 +1,16 @@
 import "./Home.css";
 import Contact from "../common/Contact";
-import puneetPhoto from '../../assets/Puneet.jpg';
-import certificatePhoto from '../../assets/401367-0-16504900-1746162168-certificate_gold_seal_certification_by_dny59_gettyimages-942721178_2400x1600-100788472-orig.webp';
-import graduationPhoto from '../../assets/graduation-cap-on-top-of-books.jpg';
-import mernPhoto from '../../assets/MERN_Stack_9437df2ba9_62af1dd3fc.png';
-import puneetResume from '../../assets/Puneet_Singhal_Resume.pdf';
+import puneetPhoto from "../../assets/Puneet.jpg";
+import certificatePhoto from "../../assets/401367-0-16504900-1746162168-certificate_gold_seal_certification_by_dny59_gettyimages-942721178_2400x1600-100788472-orig.webp";
+import graduationPhoto from "../../assets/graduation-cap-on-top-of-books.jpg";
+import mernPhoto from "../../assets/MERN_Stack_9437df2ba9_62af1dd3fc.png";
+import puneetResume from "../../assets/PUNEET_Resume.pdf";
 export default function Home() {
   const scrollToContact = () => {
-    document
-      .getElementById("contact")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
   const scrollToProject = () => {
-    document
-      .getElementById("Projects")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("Projects").scrollIntoView({ behavior: "smooth" });
   };
   return (
     <>
@@ -37,9 +33,9 @@ export default function Home() {
             for the growth of the organization.{" "}
           </p>
           <div className="btn-group">
-          <a href="#">
-  <button onClick={scrollToContact}>Let's Connect</button>
-</a>
+            <a href="#">
+              <button onClick={scrollToContact}>Let's Connect</button>
+            </a>
             <button onClick={scrollToProject}>Projects</button>
             <a href={puneetResume}>Resume</a>
           </div>
@@ -53,27 +49,37 @@ export default function Home() {
         <div className="content">
           <h2>About</h2>
           <p className="font-normal">
-            I am a passionate and dedicated web development student with
+            I am a passionate and dedicated <span>web developer</span> with
             knowledge of <span>HTML</span>,<span> CSS</span>,
-            <span> JavaScript</span>, and<span> React.js</span>. I enjoy
-            building responsive and user-friendly websites while continuously
-            improving my frontend development skills.
+            <span> JavaScript</span>,<span> React.js</span>,
+            <span> Node.js</span>,<span> Express.js</span>, and
+            <span> MongoDB</span>. I enjoy building <span>responsive</span>,{" "}
+            <span>user-friendly</span>, and{" "}
+            <span>dynamic web applications</span> while continuously improving
+            my development skills.
           </p>
           <p className="font-normal">
-            Currently, I am learning backend technologies like
-            <span> Node.js</span>,<span>Express.js</span>, and
-            <span> MongoDB</span> to become a<span> full-stack developer</span>.
-            I love
-            <span>exploring</span> new <span>technologies</span> and creating
-            projects that help me gain practical experience and improve my
-            <span> problem-solving</span> abilities.
+            I have completed a <span>3-month internship</span> as a{" "}
+            <span>Software Developer Intern</span> at SmartED Innovations, where
+            I gained practical experience in <span>MERN stack development</span>
+            . During my internship, I <span>developed</span> and{" "}
+            <span>maintained front-end</span> and{" "}
+            <span>back-end components</span> for real-world projects,{" "}
+            <span>integrated RESTful APIs</span>,{" "}
+            <span>optimized database operations</span>, and{" "}
+            <span>created responsive UI/UX designs</span>. I also collaborated
+            with team members in an Agile environment and used <span>Git</span>{" "}
+            for <span>version control</span> and <span>task management</span>.
+            This experience strengthened my technical skills, problem-solving
+            abilities, teamwork, and project management skills.
           </p>
           <p className="font-normal">
-            Apart from technical skills, I believe in<span> teamwork</span>,
-            <span> leadership</span>, and
-            <span> continuous learning</span>. My<span> goal</span> is to
-            <span> build</span> modern and impactful
-            <span> web applications</span> while growing as a professional
+            Currently, I am{" "}
+            <span>practicing Data Structures and Algorithms (DSA) in Java</span>{" "}
+            to strengthen my logical thinking and problem-solving abilities. I
+            believe in continuous learning, teamwork, and leadership. My goal is
+            to <span>build modern</span>, <span>scalable</span>, and{" "}
+            <span>impactful web applications</span> while growing as a software
             developer in the IT industry.
           </p>
         </div>
@@ -120,44 +126,107 @@ export default function Home() {
           </div>
         </div>
         <div className="certificate-image">
-          <img
-            src={certificatePhoto} />
+          <img src={certificatePhoto} />
         </div>
       </section>
       <section className="project" id="Projects">
         <div className="content">
-        <h2>Projects</h2>
-        <div className="project1">
+          <h2>Projects</h2>
+
+          <div className="project1">
             <h4>
-              <span>Gym Management System</span>
+              <span>QUICKCART E-COMMERCE APPLICATION</span>
             </h4>
-            <p><span>Description : </span>Developed a web-based application designed to streamline and automate the daily operations of a 
-            gym like gym member registrations, batch scheduling, fee payments, and stakeholder communication.</p>
-            <p><span>Technologies Used : </span>HTML, CSS, JavaScript, Bootstrap, PHP, MySQL .</p>
-            <a href="https://github.com/puneets007/Gym_Management_Project" target='_blank'>
-        <i className="fa-brands fa-github" />
-      </a>
+            <p>
+              <span>Description : </span>Developed RESTful APIs using Node.js
+              and Express.js to handle product data, user accounts, and order
+              processing. Implemented secure JWT-based authentication and
+              role-based authorization to manage user access. Designed an
+              interactive and responsive user interface using React.js and
+              Tailwind CSS, incorporating shopping cart and order management
+              functionality for a smooth user experience.
+            </p>
+            <p>
+              <span>Technologies Used : </span>HTML, CSS, JavaScript, React.js,
+              Node.js, Express.js and MongoDB .
+            </p>
+            <a
+              href="https://github.com/puneets007/QuickCart_MERN"
+              target="_blank"
+            >
+              <i className="fa-brands fa-github" />
+            </a>
+          </div>
+
+          <div className="project1">
+            <h4>
+              <span>Translator Application</span>
+            </h4>
+            <p>
+              <span>Description : </span>Integrated a translation API to enable
+              real-time text translation between multiple languages. Developed
+              an interactive, responsive, and user-friendly interface using
+              React.js, HTML, CSS, and JavaScript, with language selection and
+              input-handling features to ensure a smooth translation experience.
+            </p>
+            <p>
+              <span>Technologies Used : </span>HTML, CSS, JavaScript and
+              React.js .
+            </p>
+            <a
+              href="https://github.com/puneets007/REACT_translator-application"
+              target="_blank"
+            >
+              <i className="fa-brands fa-github" />
+            </a>
           </div>
 
           <div className="project1">
             <h4>
               <span>YouTube Clone</span>
             </h4>
-            <p><span>Description : </span>Developed a video streaming platform similar to YouTube, allowing users to view, and interact 
-            with video content. Implemented features like playback, comments, and likes. </p>
-            <p><span>Technologies Used : </span>HTML, CSS and JavaScript .</p>
-            <a href="https://github.com/puneets007/YouTube" target='_blank'>
-        <i className="fa-brands fa-github" />
-      </a>
+            <p>
+              <span>Description : </span>Developed a video streaming platform
+              similar to YouTube, allowing users to view, and interact with
+              video content. Implemented features like playback, comments, and
+              likes.{" "}
+            </p>
+            <p>
+              <span>Technologies Used : </span>HTML, CSS and JavaScript .
+            </p>
+            <a href="https://github.com/puneets007/YouTube" target="_blank">
+              <i className="fa-brands fa-github" />
+            </a>
+          </div>
+
+          <div className="project1">
+            <h4>
+              <span>Gym Management System</span>
+            </h4>
+            <p>
+              <span>Description : </span>Developed a web-based application
+              designed to streamline and automate the daily operations of a gym
+              like gym member registrations, batch scheduling, fee payments, and
+              stakeholder communication.
+            </p>
+            <p>
+              <span>Technologies Used : </span>HTML, CSS, JavaScript, Bootstrap,
+              PHP, MySQL .
+            </p>
+            <a
+              href="https://github.com/puneets007/Gym_Management_Project"
+              target="_blank"
+            >
+              <i className="fa-brands fa-github" />
+            </a>
           </div>
         </div>
       </section>
       <section className="contact" id="contact">
         <div className="content">
           <h2>Contact</h2>
-        <Contact />
+          <Contact />
         </div>
-      
       </section>
     </>
   );
